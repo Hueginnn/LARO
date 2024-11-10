@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Selection</title>
+    <link rel="stylesheet" href="indexcss.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #0b0447c0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .button:hover {
+            transform: scale(1.05);
+        }
+
+        .button.monopoly {
+            background-color: #ff6347;  
+        }
+
+        .button.brainiacs {
+            background-color: #0b1024;  
+        }
+
+        .button.coming-soon {
+            background-color: #6e6e6e;  
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Select Your Game</h1>
+        <button class="button monopoly" onclick="window.location.href='monopoly.html'">Monopoly</button>
+        <button class="button brainiacs" onclick="window.location.href='brainiacs.html'">Brainiacs Bonanza</button>
+        <button class="button coming-soon">Coming Soon</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduQuest - Monopoly-like Game</title>
+    <link rel="stylesheet" href="monocss.css">
+</head>
+<body>
+    
+    <div id="welcome-screen">
+        <h1>WELCOME TO EDUQUEST</h1>
+        <p>Select the number of players:</p>
+        <div class="player-selection">
+            <button class="player-btn" data-players="1">1 Player</button>
+            <button class="player-btn" data-players="2">2 Players</button>
+            <button class="player-btn" data-players="3">3 Players</button>
+            <button class="player-btn" data-players="4">4 Players</button>
+        </div>
+    </div>
+
+   
+    <div id="game-container" class="hidden">
+        <div id="scoreboard">
+            <p>Player 1: <span id="player1-score">0</span> points</p>
+            <p>Player 2: <span id="player2-score">0</span> points</p>
+            <p>Player 3: <span id="player3-score">0</span> points</p>
+            <p>Player 4: <span id="player4-score">0</span> points</p>
+        </div>
+
+        <h1>EduQuest Board</h1>
+        
+         
+        <p id="turn-info">Player 1's Turn</p>
+        
+        <div class="controls">
+            <button id="roll-btn">Roll & Answer</button>
+        </div>
+
+        <div id="board-container">
+            <div id="board"></div>
+        </div>
+
+        <div class="controls">
+            <button id="end-game-btn">End Game</button> 
+        </div>
+    </div>
+
+    <script src="monoscript.js"></script>
+</body>
+</html>

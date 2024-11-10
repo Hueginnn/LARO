@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brainiacs Bonanza</title>
+    <link rel="stylesheet" href="braincss.css">
+</head>
+<body>
+    <div id="homepage">
+        <h1>Brainiacs Bonanza</h1>
+        <button id="startBtn">Start Game</button>
+        <button id="viewRankingBtn">View Ranking</button>
+        <button id="Exit">Exit Game</button>
+    </div>
+
+    <div id="registrationPage" style="display: none;">
+        <h2>Player Registration</h2>
+        <label for="playerCount">Select Number of Players (2-5):</label>
+        <input type="number" id="playerCount" min="2" max="5" value="2">
+        <button id="confirmPlayerCountBtn">Confirm Player Count</button>
+        <input type="text" id="playerName" placeholder="Enter Player Name" disabled>
+        <button id="registerBtn" disabled>Register</button>
+        <button id="returnBtn" class="return-button">Return to Home</button>
+        <div id="registeredPlayers"></div>
+    </div>
+
+    <div id="rankingPage" style="display: none;">
+        <h2>Player Ranking</h2>
+        <table id="rankingTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Wins</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <button id="returnToHomeBtn">Return Home</button>
+    </div>
+
+    <div id="gameContainer" style="display: none;">
+        <h2 id="roundTitle"></h2>
+        <div id="questionText"></div>
+        <div id="choicesContainer"></div>
+        <div id="roundScoresDisplay"></div>
+        <button id="nextQuestionBtn" style="display: none;">Next Question</button>
+    </div>
+
+    <div id="endGameScreen" style="display: none;">
+        <h2>Game Summary</h2>
+        <div id="winnerDisplay"></div>
+        <div id="summaryDisplay"></div>
+        <button id="playAgainBtn">Play Again</button>
+        <button id="exitBtn">Exit</button>
+        <button id="returnBtnEnd" class="return-button">Return to Home</button>
+    </div>
+
+    <script src="brainscript.js"></script>
+</body>
+</html> 
